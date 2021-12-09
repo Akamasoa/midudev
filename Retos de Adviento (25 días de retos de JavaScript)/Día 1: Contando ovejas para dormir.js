@@ -22,3 +22,7 @@ console.log(ovejasFiltradas)
 Recuerda. Debe contener las dos letras 'a' y 'n' en el nombre. No cuentes ovejas que sólo tenga una de las letras, debe tener ambas.
 */
 
+export default function contarOvejas(ovejas) {
+  // aquí tu magia
+	return ovejas.filter(oveja => oveja.color === 'rojo' && oveja.name.match(/[aA]/i) && oveja.name.match(/[nN]/i));
+}
