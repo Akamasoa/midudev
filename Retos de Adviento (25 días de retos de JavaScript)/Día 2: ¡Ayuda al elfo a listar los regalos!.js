@@ -21,3 +21,19 @@ console.log(regalos)
 */
 //Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con contar espacios vacíos!
 
+export default function listGifts(letter) {
+ // ¡Tú puedes!
+ const gifts = letter.split(' ');
+  let list = {};
+  for (let i = 0; i < gifts.length; i++) {
+    let gift = gifts[i];
+    if (gift !== '' && !gift.includes('_')) {
+      if (list[gift]) {
+        list[gift]++;
+      } else {
+        list[gift] = 1;
+      }
+    }
+  }
+  return list;
+}
