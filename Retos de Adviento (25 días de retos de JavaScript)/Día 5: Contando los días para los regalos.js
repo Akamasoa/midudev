@@ -32,3 +32,11 @@ daysToXmas(date4) // -7
 Por cierto, la fecha de referencia para saber si es 25 de diciembre es Dec 25, 2021.
 */
 
+export default function daysToXmas(date) {
+  // ¡Y no olvides compartir tu solución en redes!
+ let aux = new Date(date);
+  let fechaNavidad = new Date('Dec 25, 2021');
+  let fechaNavidadMenosDate = fechaNavidad.getTime() - aux.getTime();
+  let diasEnMS = 1000 * 60 * 60 * 24;
+  return Math.ceil(fechaNavidadMenosDate / diasEnMS);
+}
