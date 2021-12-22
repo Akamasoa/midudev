@@ -39,3 +39,6 @@ export default function listGifts(letter) {
   }
   return list;
 }
+
+const regalos = listGifts(carta);
+console.log(regalos);
