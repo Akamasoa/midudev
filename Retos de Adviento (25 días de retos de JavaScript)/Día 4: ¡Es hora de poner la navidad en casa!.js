@@ -44,3 +44,5 @@ export default function createXmasTree(height) {
   arbol = arbol.concat(barra.repeat(height - 1), tronco, barra.repeat(height - 1))
   return arbol;
 }
+
+console.log(createXmasTree(5));
